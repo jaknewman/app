@@ -25,7 +25,7 @@ def to_excel(df):
   df.to_excel(writer, index=False, sheet_name='Feuille1')
   workbook = writer.book
   worksheet = writer.sheets['Feuille1']
-  writer.save()
+  writer.close()
   processed_data = output.getvalue()
   return processed_data
 
