@@ -97,5 +97,5 @@ if st.button("Rechercher mise à jour"):
       st.success("Votre fichier est prêt pour le téléchargement !")
 
 if __name__ == "__main__":
-    st.title("Application de mise à jour")
+    st.header("Application de mise à jour")
     st.set_option("deprecation.showfileUploaderEncoding", False)
