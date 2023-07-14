@@ -94,10 +94,8 @@ if st.button("Rechercher mise à jour"):
       st.write(df_scraped.head())
       df_xlsx = to_excel(df_scraped)
       st.download_button(label="Télécharger", data = df_xlsx, file_name="fichier_propluvia_MAJ.xlsx")
-      st.success("Téléchargement terminé !")
+      st.success("Votre fichier est prêt pour le téléchargement !")
 
 if __name__ == "__main__":
     st.title("Application de mise à jour")
-    st.sidebar.title("Paramètres")
     st.set_option("deprecation.showfileUploaderEncoding", False)
-    st.sidebar.info("Glissez et déposez un fichier XLSX pour commencer.")
