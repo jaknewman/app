@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1SEryK1P4VlVjG7s2HL5jSobVNYy-fUlp
 """
 
-pip install pyxlsb
-
 import pandas as pd
 import numpy as np
 import streamlit as st
