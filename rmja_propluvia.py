@@ -15,6 +15,10 @@ from pyxlsb import open_workbook as open_xlsb
 import requests
 from bs4 import BeautifulSoup
 
+if __name__ == "__main__":
+    st.title("Application de mise à jour")
+    st.set_option("deprecation.showfileUploaderEncoding", False)
+
 def read_excel_file(file):
   df = pd.read_excel(file)
   return df
@@ -95,7 +99,3 @@ if st.button("Rechercher mise à jour"):
       df_xlsx = to_excel(df_scraped)
       st.download_button(label="Télécharger", data = df_xlsx, file_name="fichier_propluvia_MAJ.xlsx")
       st.success("Votre fichier est prêt pour le téléchargement !")
-
-if __name__ == "__main__":
-    st.header("Application de mise à jour")
-    st.set_option("deprecation.showfileUploaderEncoding", False)
